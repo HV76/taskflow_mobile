@@ -148,20 +148,4 @@ flutter build apk --release
 El APK resultante se genera en:
 `build/app/outputs/flutter-apk/app-release.apk`
 
-## Funcionalidad implementada (CRUD)
 
-| Operacion | Donde | Descripcion |
-|---|---|---|
-| **Create** | `TaskFormModal` + `FirestoreService.createTask` | Formulario reactivo con validacion (titulo, descripcion, prioridad, ubicacion). Estado inicial `Pendiente` y `createdAt` con `Timestamp.now()`. |
-| **Read** | `HomeScreen` + `FirestoreService.streamTasks` | `StreamBuilder` sobre `snapshots()` de Firestore, ordenado por `createdAt` descendente, con chips de filtro por estado. |
-| **Update** | `TaskCard` (menu de estado) y `TaskFormModal` (edicion) + `FirestoreService.updateTaskStatus` / `updateTask` | Cambia el estado (Pendiente/En Progreso/Completado) o edita los campos, actualizando `updatedAt`. |
-| **Delete** | `HomeScreen._confirmDelete` + `FirestoreService.deleteTask` | Dialogo de confirmacion antes de eliminar el documento en Firestore. |
-
-## Notas para la entrega
-
-- El archivo `lib/firebase_options.dart` incluido es un **esqueleto de
-  ejemplo** con el formato correcto; debe regenerarse con
-  `flutterfire configure` usando tu propio proyecto de Firebase antes de
-  compilar, ya que las credenciales son unicas por proyecto y no pueden
-  generarse sin acceso a tu cuenta de Firebase.
-- La coleccion de Firestore utilizada es `work_orders`.
