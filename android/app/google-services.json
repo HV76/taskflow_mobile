@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "263314174393",
+    "project_id": "taskflowmobile-uvm-hector",
+    "storage_bucket": "taskflowmobile-uvm-hector.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263314174393:android:a5aeb5f9d51d733e000668",
+        "android_client_info": {
+          "package_name": "com.example.taskflow_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNUXtPziRzdNg8GlwWnkUkjZAIKFwp8Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
